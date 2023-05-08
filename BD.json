@@ -1,0 +1,8 @@
+[
+    {"id":1, "nombre":"AK47 | Legion de anubis", "precio":2000, "img": "./Assets/img/ak47.png", "float":0.0053, "estado":"(Factory New)",    "categoria":"Pistolas"},
+    {"id":2, "nombre":"M4A4 | Emperador",        "precio":2100, "img": "./Assets/img/ak47.png", "float":0.1657, "estado":"(Field Tested)",   "categoria":"Rifles"},
+    {"id":3, "nombre":"USP | Muerte confirmada", "precio":2200, "img": "./Assets/img/ak47.png", "float":1.9463, "estado":"(Factory New)",    "categoria":"Rifles"},
+    {"id":4, "nombre":"AK47 | LEGION DE ANUBIS", "precio":2000, "img": "./Assets/img/ak47.png", "float":0.0053, "estado":"(Minimal Wear)",   "categoria":"Pistolas"},
+    {"id":5, "nombre":"M4A4 | EMPERADOR",        "precio":2100, "img": "./Assets/img/ak47.png", "float":0.1657, "estado":"(Well Worn)",      "categoria":"SubFusiles"},
+    {"id":6, "nombre":"USP | MUERTE CONFIRMADA", "precio":2200, "img": "./Assets/img/ak47.png", "float":1.9463, "estado":"(Battle Scarred)", "categoria":"Pistolas"}
+]

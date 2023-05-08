@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jota Store</title>
+
+    <!-- link BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Toastify -->
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+
+    <!-- Link SweetAlert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body">
+    <header>
+        <nav class="navbar">
+            <div class="navContainer">
+                <a class="navbarImg" href="#">
+                    <img src="./Assets/img/LogoTransparente.png" alt="logo" width="100" height="100">
+                </a>
+                <div class="enlacesContainer">
+                    <a href="#">Vender</a>
+                    <a href="#">Tienda</a>
+                    <a href="#">Info</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="imgPortada pt-3 pb-3">
+                <img src="./Assets/img/portada.png" alt="portada">
+            </div>
+        </section>
+
+        <!-- Carrito de compras -->
+        <div class="wrapper">
+            <div class="searchContainer">
+                <input type="search"
+                id="searchInput"
+                placeholder="Buscar articulos...">
+                <button id="search">Buscar</button>
+            </div>
+        </div>
+        <section id="skinContainer" class="skinContainer d-flex">
+            <div class="categoryContainer">
+                <h2 class="titulo-categorias">Categorias</h2>
+                <div id="buttons">
+                    <button class="categoryButton" onclick="filterSkins('Todo')">Todo</button>
+                    <button class="categoryButton" onclick="filterSkins('Pistolas')">Pistolas</button>
+                    <button class="categoryButton" onclick="filterSkins('Escopetas')">Escopetas</button>
+                    <button class="categoryButton" onclick="filterSkins('SubFusiles')">SubFusiles</button>
+                    <button class="categoryButton" onclick="filterSkins('Rifles')">Rifles</button>
+                    <button class="categoryButton" onclick="filterSkins('Cuchillos')">Cuchillos</button>
+                    <button class="categoryButton" onclick="filterSkins('Guantes')">Guantes</button>
+                </div>
+
+            </div>
+            <div id="cardContainer" class="cardContainer d-flex flex-wrap gap-3 ">
+
+            </div>
+        </section>
+
+        <section>
+            <!-- Modal -->
+            <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="cartContainer">
+                            <p>Agrega un articulo al carrito!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="salirCarrito">Seguir
+                                comprando</button>
+                            <button type="button" class="botonConfirmar btn btn-primary" id="confirmarCompra">Confirmar
+                                Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos Reservados @jotastorecsgo</p>
+    </footer>
+
+
+    <!-- Script SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Script Toastify -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+
+    <!-- Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <!-- <script src="javascript.js"></script> -->
+</body>
+
+</html>
